@@ -2,7 +2,7 @@
 session_start();
 // connexion base de donnée et requet
 $user = $_SESSION['login'];
-$bdd = mysqli_connect("localhost","root","root","moduleconnexion");mysqli_set_charset($bdd,"UTF8");
+$bdd = mysqli_connect("localhost:3306","root-","root-","mathieu-tatat_module-connexion");mysqli_set_charset($bdd,"UTF8");
 $requete = mysqli_query($bdd,"SELECT * FROM `utilisateurs` ");
 // test 
 

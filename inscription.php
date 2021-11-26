@@ -2,7 +2,7 @@
 session_start();
 
 // connexion à la base de données
-$bdd = mysqli_connect("localhost","root","root","moduleconnexion");mysqli_set_charset($bdd,"UTF8");
+$bdd = mysqli_connect("localhost:3306","root-","root-","mathieu-tatat_module-connexion");mysqli_set_charset($bdd,"UTF8");
 $login = $_POST['login'];  
 $prenom = $_POST['prenom'];
 $nom = $_POST['nom'];
