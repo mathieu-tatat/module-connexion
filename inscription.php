@@ -25,15 +25,18 @@ $users = mysqli_fetch_all($sql);
             if ($_POST['login'] == $user[1]){
                 $bool =1;
             }
+            if($bool == 1){
+                echo "Erreur Ce login est deja existant";
+             }
+             else if($password == $confirmation){
+                 $req = mysqli_query($bdd,"INSERT INTO utilisateurs(login, prenom, nom, password) VALUES ('$login','$prenom','$nom','$password')");
+                 header('Location: connexion.php');
+             }
+             else
+               echo "Erreur : Les mots de passe sont différents";
+             }
         }
-    
-             // Si login n'existe pas -> 
 
-   if ($bool == false ){
-        $req = mysqli_query($bdd,"INSERT INTO `utilisateurs`(`login`, `prenom`, `nom`, `password`) VALUES ('$login','$prenom','$nom','$password')");
-        header('Location: connexion.php');
-   }
-}
 ?>
 
 <!DOCTYPE html>
