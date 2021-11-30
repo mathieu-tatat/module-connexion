@@ -82,7 +82,7 @@ header("location: index.php");
             <div>
                 <a href="https://www.facebook.com/" class="fa fa-facebook"></a>  
                 <a href="https://twitter.com/?lang=fr" class="fa fa-twitter"></a>  
-                <a href="https://github.com/mathieu-tatat/module-connexion" class="fa fa-github"></a>  
+                <a href="https://github.com/mathieu-tatat/module-connexion" class="fa fa-github" style="background-color:aqua"></a>  
                 <a href="https://www.youtube.com/" class="fa fa-youtube"></a>  
                 <a href="https://www.snapchat.com/l/fr-fr/download" class="fa fa-snapchat-ghost"></a> 
             </div>
