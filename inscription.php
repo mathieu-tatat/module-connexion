@@ -110,7 +110,7 @@ $users = mysqli_fetch_all($sql);
             <div>
                 <a href="https://www.facebook.com/" class="fa fa-facebook"></a>  
                 <a href="https://twitter.com/?lang=fr" class="fa fa-twitter"></a>  
-                <a href="#https://www.instagram.com/" class="fa fa-instagram"></a>  
+                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>  
                 <a href="https://www.youtube.com/" class="fa fa-youtube"></a>  
                 <a href="https://www.snapchat.com/l/fr-fr/download" class="fa fa-snapchat-ghost"></a> 
             </div>
