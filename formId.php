@@ -1,11 +1,11 @@
 <?php 
 session_start();
-$user = $_SESSION['login'];
+
 /*  ///////// connexion base de donées et requètes  \\\\\\\\  */
 $bdd = mysqli_connect("localhost:3306","root-","root-","mathieu-tatat_module-connexion");mysqli_set_charset($bdd,"UTF8");
 $requete = mysqli_query($bdd,"SELECT * FROM utilisateurs WHERE login = '$user'");
 $result = mysqli_fetch_all($requete,MYSQLI_ASSOC);
-
+$user = $_SESSION['login'];
     /*  ///////// mes varriables   \\\\\\\\  */
 
 $login = $result[0]['login'];  
